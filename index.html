@@ -4,28 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marzana Mim | Portfolio</title>
+    <!-- আলাদা CSS ফাইলের লিংক -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Hi, I'm Marzana Mim 👋</h1>
-        <p>Frontend Developer</p>
-    </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Welcome to my personal portfolio website! I am learning and building web applications.</p>
-    </section>
+<header>
+    <h2>Marzana Mim</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <section>
-        <h2>My Projects</h2>
-        <ul>
-            <li>Student Course Registration System</li>
-        </ul>
-    </section>
+<div class="hero">
+    <h1>Hello, I'm Marzana Mim</h1>
+    <p>Software Engineering Student | Future Software Developer</p>
+    <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+        Explore My Portfolio
+    </button>
+</div>
 
-    <footer>
-        <p>Contact: mim241-35-480@diu.edu.bd</p>
-    </footer>
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a Software Engineering student at Daffodil International University. I am passionate about web design, programming, and developing solution-oriented software applications.</p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">C Programming</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Student Course Registration System</h3>
+            <p>A web-based course management tool designed to streamline course enrollment and registration processes for students and administrators.</p>
+            <a href="https://github.com/MarzanaMim/student-course-registration-syatem" target="_blank">View on GitHub →</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for collaborations or opportunities!</p>
+    <p style="margin-top: 15px; font-weight: bold; font-size: 18px;">
+        Email: <a href="mailto:mim241-35-480@diu.edu.bd" style="color: #7c3aed; text-decoration: none;">mim241-35-480@diu.edu.bd</a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Marzana Mim. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
